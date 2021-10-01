@@ -1,12 +1,11 @@
 package com.umesh.plantix.network
 
 
-import com.umesh.plantix.network.data.model.ImageListApiResponse
-import com.umesh.plantix.network.data.picsum.PickSumApiResponseItem
+import com.umesh.plantix.albumlist.data.model.ImageListApiResponse
+import com.umesh.plantix.albumlist.data.model.picsum.PickSumApiResponseItem
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
-import retrofit2.http.Query
 
 interface ApiService {
 

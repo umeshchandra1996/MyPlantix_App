@@ -1,8 +1,8 @@
 package com.umesh.plantix.di
 
-import com.umesh.plantix.repository.ImageListRepository
-import com.umesh.plantix.usecase.ImageListUseCase
-import com.umesh.plantix.usecase.ImageListUseCaseImpl
+import com.umesh.plantix.albumlist.data.repository.ImageListRepository
+import com.umesh.plantix.albumlist.domain.usecase.ImageListUseCase
+import com.umesh.plantix.albumlist.domain.usecase.ImageListUseCaseImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -12,11 +12,9 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object DomainModule {
-
-
     @Provides
     @Singleton
-    fun provideEverythingNewsUseCase(imageListRepository: ImageListRepository) =
+    fun provideImageListUseCase(imageListRepository: ImageListRepository) =
         ImageListUseCaseImpl(imageListRepository) as ImageListUseCase
 
 }

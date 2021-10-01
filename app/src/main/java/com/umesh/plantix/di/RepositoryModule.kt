@@ -1,8 +1,8 @@
 package com.umesh.plantix.di
 
 import com.umesh.plantix.network.ApiService
-import com.umesh.plantix.repository.ImageListRepository
-import com.umesh.plantix.repository.ImageListRepositoryImpl
+import com.umesh.plantix.albumlist.data.repository.ImageListRepository
+import com.umesh.plantix.albumlist.data.repository.ImageListRepositoryImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
